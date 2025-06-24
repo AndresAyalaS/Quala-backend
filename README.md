@@ -24,29 +24,12 @@ API RESTful desarrollada en .NET 6 para la gestión de sucursales y monedas de l
 ```
 QualaBackend/
 ├── Controllers/
-│   ├── AuthController.cs
-│   ├── SucursalesController.cs
-│   └── MonedasController.cs
 ├── Interfaces/
-│   └── ISucursalRepository.cs
-│   └── IMonedaRepository.cs
-│   └── IAuthService.cs
 ├── Models/  (o referenciados desde QualaApi.Models)
 ├── Repositories/
-│   └── SucursalRepository.cs
-│   └── MonedaRepository.cs
-│   └── UsuarioRepository.cs
 ├── Services/
-│   └── AuthService.cs
-│   └── ValidationService.cs
-│   └── ResponseService.cs
 ├── Validators/
-│   └── SucursalCreateDtoValidator.cs
-│   └── SucursalUpdateDtoValidator.cs
-│   └── LoginRequestValidator.cs
 ├── Configuration/
-│   └── JwtSettings.cs
-│   └── CorsSettings.cs
 ├── Program.cs
 ├── appsettings.json
 ```
@@ -99,10 +82,6 @@ Asegúrate de tenerlos creados en tu base de datos con la estructura adecuada.
 ## 🔐 Autenticación
 
 La autenticación se realiza mediante JWT. Al hacer login en `/api/auth/login`, se recibe un token que debe ser enviado en el header:
-
-```
-Authorization: Bearer <tu_token>
-```
 
 ---
 
